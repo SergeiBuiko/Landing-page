@@ -1,11 +1,44 @@
-.box {
+/* .box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 60%;
+} */
+
+/* @font-face {
+  font-family: 'Lexend-Bold';
+  src: local('Lexend-Bold'),
+    url('./fonts/LLexend-Bold.ttf') format('truetype');
+  font-weight: bold;
+} */
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+  border: 4px solid #478BF9;
+  border-radius: 64px;
+  width: 100%;
+  height: 96px;
 }
 
-@media screen and (max-width: 900px) {
+.list {
+  list-style: none;
+  display: flex;
+
+}
+
+li {
+  text-align: left;
+  margin-right: 10px;
+}
+
+button {
+  margin-right: 10px;
+  font-family: Lexend-Medium;
+}
+
+/* @media screen and (max-width: 900px) {
   .box {
     width: 90%;
   }
@@ -15,4 +48,4 @@
   .box {
     width: 90%;
   }
-}
+} */

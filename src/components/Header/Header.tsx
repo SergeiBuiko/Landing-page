@@ -1,28 +1,35 @@
-import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
-import { useTodo } from '../../utils';
 import styles from './Header.module.css';
 
 export const Header = () => {
-  const { todoList } = useTodo();
   return (
-    <Box className={styles.box}>
-      <Typography
-        className={styles.todolist}
-        sx={{ fontSize: 30 }}
-        variant="h2"
-        component="h2"
-      >
-        Todo list
-      </Typography>
-      <Typography
-        className={styles.tasks}
-        sx={{ fontSize: 25 }}
-        variant="h5"
-        component="h5"
-      >
-        tasks: {todoList.length}
-      </Typography>
-    </Box>
+    <div className={styles.navigation}>
+      <div>
+        <ul className={styles.list}>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Brands</a>
+          </li>
+          <li>
+            <a href="#">Commissions</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button>EN</button>
+        <button>LOG IN</button>
+        <button>SIGN UP</button>
+      </div>
+    </div>
   );
 };
